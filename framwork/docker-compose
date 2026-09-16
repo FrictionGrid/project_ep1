@@ -11,7 +11,7 @@ services:        # นิยาม container ต่าง ๆ (ส่วนท�
     environment: ... # ตัวแปรสภาพแวดล้อม
     ports: ...       # แมป port ระหว่าง host กับ container
     volumes: ...     # แมปพื้นที่เก็บข้อมูล
-
+    
 
 volumes:         # ประกาศ named volume (ต้องมีถ้าใช้ named volume ใน service)
 
