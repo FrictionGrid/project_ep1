@@ -1,0 +1,19 @@
+services:        # นิยาม container ต่าง ๆ (ส่วนที่ใช้บ่อยที่สุด)
+  ชื่อ-service1:
+    image: ...       # หรือ build: . ถ้า build จาก Dockerfile เอง
+    environment: ... # ตัวแปรสภาพแวดล้อม
+    ports: ...       # แมป port ระหว่าง host กับ container
+    volumes: ...     # แมปพื้นที่เก็บข้อมูล
+
+
+  ชื่อ-service2:
+    image: ...       # หรือ build: . ถ้า build จาก Dockerfile เอง
+    environment: ... # ตัวแปรสภาพแวดล้อม
+    ports: ...       # แมป port ระหว่าง host กับ container
+    volumes: ...     # แมปพื้นที่เก็บข้อมูล
+
+
+volumes:         # ประกาศ named volume (ต้องมีถ้าใช้ named volume ใน service)
+
+
+networks:        # ประกาศ network (ใส่เมื่อต้องการกำหนดเอง หรือ Compose สร้างให้อัตโนมัติ)

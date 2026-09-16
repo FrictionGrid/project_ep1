@@ -1,2 +1,4 @@
 1. nest new "name project" = สร้างโปรเจคใหม่
 2. npm install @nestjs/config = สร้าง.env
+3. built file "docker-compose.yml" = สร้างฐานข้อมูล
+3.1 docker compose up -d = สร้างและสตาร์ต container ทุกตัวในไฟล์
