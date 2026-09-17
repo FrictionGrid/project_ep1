@@ -22,5 +22,10 @@
     8.2 const app = await NestFactory.create(AppModule); = ไปเรียก app.module.ts
     8.3 imports: = นำเข้า module อื่นเข้ามาในขอบเขตของ module เพื่อ export class AppModule {}
 9. built entity = แบบพิมพ์เขียวของตาราง นำมาใช้ในการ coding
-10. built dto = 
+10. built dto = class ที่กำหนดรูปร่างและเงื่อนไขของข้อมูลที่ client ส่งเข้ามา/รับกลับไปผ่าน API
     10.1 npm install class-validator class-transformer
+    10.2 app.useGlobalPipes(new ValidationPipe({whitelist: true,forbidNonWhitelisted: true})); เพิ่มใน main.ts =
+    whitelist: true =  ตัด field ที่ไม่ประกาศใน dto เวลาส่งมา
+    forbidNonWhitelisted: true = เปลี่ยนเป็นโยน erro กลับไปเมื่อเจอ field เเปลกปลอม
+    10.3 ป้องกัน mass-assignment attack = การที่ผู้โจมตีแอบใส่ field ต้องห้ามเข้าไปใน request 
+    ตัวอย่าง: ใส่สิทธิ์ admin เพื่อให้เข้าหน้าต่างๆได้

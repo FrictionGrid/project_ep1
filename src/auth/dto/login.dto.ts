@@ -1,15 +1,11 @@
-import { IsNotEmpty, IsString, IsStrongPassword } from 'class-validator';
+import { IsNotEmpty, IsString } from 'class-validator';
 
 export class LoginDto {
-    @IsString()
-    @IsNotEmpty()
+    @IsString({ message: 'Username must be a string' })
+    @IsNotEmpty({ message: 'Username is required' })
     username: string;
 
-    @IsStrongPassword({
-    minLength: 8,
-    minUppercase: 1,
-    minNumbers: 1,
-    minSymbols: 1,    
-    })
+    @IsString({ message: 'Password must be a string' })
+    @IsNotEmpty({ message: 'Password is required' })
     password: string;
 }
