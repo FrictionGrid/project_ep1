@@ -1,0 +1,23 @@
+1. nest new "name project" = สร้างโปรเจคใหม่
+2. npm install @nestjs/config = สร้าง.env
+3. built file "docker-compose.yml" = สร้างฐานข้อมูล
+    3.1 docker compose up -d = สร้างและสตาร์ต container ทุกตัวในไฟล์
+    3.2 docker compose down -v = ลบ volume เก่าทิ้งด้วยทั้งหมด
+4. npm install typeorm@latest,npm install -D tsx = ตัวเชื่อม DB กับ coding
+5. npm run migration:create 'name' = สร้างไฟล์ migration
+    5.1 built file "database.config.ts"
+    5.2 package.json =
+        "typeorm": "tsx ./node_modules/typeorm/cli.js -d src/database/database.config.ts",
+        "migration:create": "tsx ./node_modules/typeorm/cli.js migration:create"
+6. npm run typeorm migration:run = รัน migration
+    6.1 import 'dotenv/config' สำหรับ "database.config.ts"
+    6.2 package.json =  "dotenv": "^17.4.2",
+    6.3 npm install = update package-lock.json
+    6.4 package.json กับ package-lock.json =
+        package.json คือ บอกว่าโปรเจกต์ต้องการ dependency อะไรบ้าง และช่วงเวอร์ชันที่ยอมรับได้ 
+        package-lock.json คือ ล็อกเวอร์ชันแน่นอนของทุก package ที่ถูกติดตั้งจริง 
+7.  nest g resource "name" = สร้างไฟล์ backend
+8. ConfigModule.forRoot() เพิ่มใน app.module.ts = สามารถดึงค่าจาก .env มาใช้ใน main.ts
+    8.1 npm run start:dev = main.ts ทำงาน
+    8.2 const app = await NestFactory.create(AppModule); = ไปเรียก app.module.ts
+    8.3 imports: =  นำเข้า module อื่นเข้ามาในขอบเขตของ module เพื่อ export class AppModule {}
