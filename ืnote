@@ -9,4 +9,6 @@
     5.2 package.json =
         "typeorm": "tsx ./node_modules/typeorm/cli.js -d src/database/database.config.ts",
         "migration:create": "tsx ./node_modules/typeorm/cli.js migration:create"
-6. 
+6. npm run typeorm migration:run = รัน migration
+    6.1 import 'dotenv/config' สำหรับ "database.config.ts"
+    6.2 package.json =  "dotenv": "^17.4.2",
