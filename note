@@ -16,8 +16,9 @@
     6.4 package.json กับ package-lock.json =
         package.json คือ บอกว่าโปรเจกต์ต้องการ dependency อะไรบ้าง และช่วงเวอร์ชันที่ยอมรับได้ 
         package-lock.json คือ ล็อกเวอร์ชันแน่นอนของทุก package ที่ถูกติดตั้งจริง 
-7.  nest g resource "name" = สร้างไฟล์ backend
+7. nest g resource "name" = สร้างไฟล์ backend
 8. ConfigModule.forRoot() เพิ่มใน app.module.ts = สามารถดึงค่าจาก .env มาใช้ใน main.ts
     8.1 npm run start:dev = main.ts ทำงาน
     8.2 const app = await NestFactory.create(AppModule); = ไปเรียก app.module.ts
-    8.3 imports: =  นำเข้า module อื่นเข้ามาในขอบเขตของ module เพื่อ export class AppModule {}
+    8.3 imports: = นำเข้า module อื่นเข้ามาในขอบเขตของ module เพื่อ export class AppModule {}
+9. built entity = แบบพิมพ์เขียวของตาราง นำมาใข้ในการ coding

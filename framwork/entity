@@ -1,0 +1,9 @@
+import{ } from 'typeorm';
+// ใช้เก็บค่าที่มีชุดตายตัว 
+export enum name{
+}
+// @Entity('name') = class นี้ map กับตารางชื่อ 'name' ในฐานข้อมูล
+@Entity('name')
+//export class name{} = ประกาศชื่ออะไรก้ได้เพื่อไปเรียกใช้งานต่อ
+export class name{
+}
