@@ -21,4 +21,6 @@
     8.1 npm run start:dev = main.ts ทำงาน
     8.2 const app = await NestFactory.create(AppModule); = ไปเรียก app.module.ts
     8.3 imports: = นำเข้า module อื่นเข้ามาในขอบเขตของ module เพื่อ export class AppModule {}
-9. built entity = แบบพิมพ์เขียวของตาราง นำมาใข้ในการ coding
+9. built entity = แบบพิมพ์เขียวของตาราง นำมาใช้ในการ coding
+10. built dto = 
+    10.1 npm install class-validator class-transformer

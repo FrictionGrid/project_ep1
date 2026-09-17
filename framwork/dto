@@ -1,0 +1,9 @@
+import {} from 'class-validator';
+
+// ใช้เก็บค่าที่มีชุดตายตัว (ถ้า DTO ต้องใช้ enum ก็ประกาศไว้ หรือ import จาก entity มาใช้ร่วมกัน)
+export enum name {
+}
+
+// export class name {} = ตั้งชื่ออะไรก็ได้ นิยมลงท้ายด้วย Dto เช่น CreateUserDto
+export class nameDto {
+}
