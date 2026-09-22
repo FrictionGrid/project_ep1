@@ -1,0 +1,13 @@
+200	        OK	                        สำเร็จทั่วไป
+201	        Created	                    สร้างข้อมูลใหม่สำเร็จ (ค่าเริ่มต้นของ @Post ใน NestJS)
+204	        No Content	                สำเร็จแต่ไม่มีข้อมูลส่งกลับ (เช่น ลบสำเร็จ)
+301/302	    Redirect	                ย้ายไปหน้าอื่น (res.redirect() ใช้ 302)
+400	        Bad Request	                ข้อมูลที่ส่งมาผิดรูปแบบ
+401	        Unauthorized	            ยังไม่ login / รหัสผิด
+403	        Forbidden	                login แล้วแต่ไม่มีสิทธิ์
+404	        Not Found	                ไม่พบหน้า/ข้อมูล
+409	        Conflict	                ข้อมูลซ้ำ เช่น username มีแล้ว
+422	        Unprocessable Entity	    ข้อมูลรูปแบบถูกแต่ไม่ผ่านเงื่อนไข
+429	        Too Many Requests	        ส่ง request ถี่เกินไป (rate limit)
+500	        Internal Server Error	    server พัง
+503	        Service Unavailable	server  ปิดปรับปรุง / รับไม่ไหว

@@ -1,0 +1,12 @@
+where	             = เงื่อนไขการค้นหา (รับ object หรือ array ได้)
+select	             = เลือกเฉพาะ column ที่จะดึง
+relations	         = join ความสัมพันธ์ (eager load)
+order	             = เรียงลำดับ เช่น { createdAt: "DESC" }
+withDeleted	         = รวม record ที่ถูก soft-delete
+cache	             = เปิด query result cache
+lock	             = pessimistic/optimistic locking
+loadRelationIds	     = โหลดแค่ id ของ relation แทน object เต็ม
+loadEagerRelations	 = เปิด/ปิด relation ที่ตั้ง eager ไว้
+relationLoadStrategy = "join" หรือ "query"
+comment	             = ใส่ comment ใน SQL
+transaction	         = ควบคุมการทำ transaction

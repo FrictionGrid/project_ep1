@@ -1,0 +1,17 @@
+constructor(
+    @InjectRepository (Names)
+    private readonly nameRepo : Repository<Names>,
+){}
+
+Constructor คือ method พิเศษที่จะทำงาน อัตโนมัติตอนที่ object ถูกสร้างขึ้นมา
+ตัวอย่าง: 
+    constructor(username: string, password: string) {
+    this.new_username = username;  
+    this.new_password = password;
+    }
+
+private readonly nameRepo คือ ตัวที่เเปรที่เเทนก้อนนี้ 
+    private	ให้ใช้ได้เฉพาะภายใน class นี้
+    readonly	กำหนดค่าครั้งเดียว เปลี่ยนทีหลังไม่ได้
+    
+Repository<Names> = ทำให้ก้อนนี้สามารถใช้ method ของ TypeORM

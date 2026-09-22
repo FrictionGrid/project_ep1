@@ -1,0 +1,17 @@
+BadRequestException	            400	request ผิด เช่น validation ไม่ผ่าน
+UnauthorizedException	        401	ยังไม่ได้ login / token ไม่ถูกต้อง
+ForbiddenException	            403	login แล้วแต่ไม่มีสิทธิ์เข้าถึง
+NotFoundException	            404	หา resource ไม่เจอ
+MethodNotAllowedException	    405	ใช้ HTTP method ผิด
+NotAcceptableException	        406	server ตอบใน format ที่ client รับไม่ได้
+RequestTimeoutException 	    408	request หมดเวลา
+ConflictException	            409	ข้อมูลชนกัน เช่น email ซ้ำ
+GoneException	                410	resource ถูกลบถาวรแล้ว
+PayloadTooLargeException	    413	ข้อมูลที่ส่งมาใหญ่เกิน
+UnsupportedMediaTypeException	415	content-type ไม่รองรับ
+UnprocessableEntityException	422	เข้าใจ request แต่ประมวลผลไม่ได้
+InternalServerErrorException	500	error ฝั่ง server
+NotImplementedException	        501	ยังไม่ได้ทำ feature นี้
+BadGatewayException	            502	gateway ได้ response เสียจาก upstream
+ServiceUnavailableException	    503	server ไม่พร้อมให้บริการ
+GatewayTimeoutException     	504	gateway รอ upstream นานเกิน

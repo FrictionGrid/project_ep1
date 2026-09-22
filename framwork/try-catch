@@ -1,0 +1,17 @@
+// กฎมีข้อเดียว: ทำ try ไปเรื่อยๆ ถ้าบรรทัดไหน error → หยุดทันที แล้วกระโดดไป catch
+try{
+
+} 
+// จะไป catch ได้ต้องเกิด "การ throw error" เท่านั้นครับ
+catch {
+
+}
+
+กรณี catch จับประเภท erro, err คือข้อความจาก throw new
+try {
+  ...
+} catch (err) {
+  if (err instanceof UnauthorizedException) { ... }
+  else if (err instanceof NotFoundException) { ... }
+  else throw err;
+}

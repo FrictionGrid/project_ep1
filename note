@@ -29,3 +29,13 @@
     forbidNonWhitelisted: true = เปลี่ยนเป็นโยน erro กลับไปเมื่อเจอ field เเปลกปลอม
     10.3 ป้องกัน mass-assignment attack = การที่ผู้โจมตีแอบใส่ field ต้องห้ามเข้าไปใน request 
     ตัวอย่าง: ใส่สิทธิ์ admin เพื่อให้เข้าหน้าต่างๆได้
+11. built service = class ที่ทำหน้าที่เก็บ logic
+    11.1 constructor = method object for service
+    11.2 function =  method for logic 
+12. npm install bcrypt + npm install -D @types/bcrypt = การเปลี่ยนข้อมูลให้กลายเป็นรหัสที่เอากลับเป็นข้อมูลเดิมไม่ได้
+    12.1 bcrypt.hash() = register 
+    12.2 bcrypt.compare() = login
+13. npm i express-session connect-pg-simple และ npm i -D @types/express-session @types/connect-pg-simple
+    13.1 SESSION_SECRET = file .env
+    13.2 app.use(session({"รายละเอียด"})) =  configuration object ของ session
+14. 

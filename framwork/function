@@ -1,0 +1,12 @@
+async name(Dto:NameDto):Promise<{}>{
+        
+return
+}
+
+async name(){} = method ที่อยู่ข้างใน class ห้ามเขียน function
+async function name(){} = เขียนตอนที่ประกาศ function ลอย ๆ อยู่นอก class เท่านั้น
+Promise<{}> = type ของผลลัพธ์ตอน return
+async = ทำให้เป็น function เป็นเเบบ Asynchronous
+    Synchronous (Sync) = ทำทีละงานรองานก่อนหน้าเสร็จ
+    Asynchronous (Async) = เริ่มงานแล้วสามารถไปทำงานอื่นต่อระหว่างรอ
+await = รอผลลัพธ์ ให้เสร็จก่อน แล้วค่อยทำบรรทัดถัดไป
